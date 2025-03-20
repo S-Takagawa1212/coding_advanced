@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "単語クイズアプリ",
-  description: "シンプルで楽しく学べる単語クイズアプリ！",
+  title: "Casteria",
+  description: "今時のおしゃれカフェ",
 };
 
 export default function RootLayout({
