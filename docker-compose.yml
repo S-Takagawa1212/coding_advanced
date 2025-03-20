@@ -1,0 +1,24 @@
+# docker-compose.yml
+services:
+  nextapp:
+    build: .
+    container_name: my-next-app-container
+    ports:
+      - "3000:3000"
+
+    # バインドマウント + named volume
+    volumes:
+      # ホストのソースコードをコンテナの /app にマウント
+      - type: bind
+        source: .
+        target: /app
+      # node_modules はコンテナ内の named volume として保持
+      - type: volume
+        source: node_modules
+        target: /app/node_modules
+
+    command: npm run dev
+
+# ここで named volume を宣言
+volumes:
+  node_modules:

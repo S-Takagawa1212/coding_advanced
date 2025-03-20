@@ -1,0 +1,13 @@
+見本/
+node_modules
+
+node_modules/
+.next/
+dist/
+build/
+.env
+*.log
+.DS_Store
+.idea/
+.vscode/
+*.swp
