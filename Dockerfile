@@ -10,6 +10,10 @@ COPY package*.json ./
 # 依存関係をインストール
 RUN npm install
 
+# gitをインストール
+RUN apk add git
+
+
 # 残りのソースコードをコピー
 COPY . .
 
