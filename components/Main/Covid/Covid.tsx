@@ -5,12 +5,14 @@ import CovidDetail from "./CovidDetail";
 
 export default function Covid() {
 type CovidSection = {
+  id: string;
   title: string;
   covidMeasuresList: string[];
 };
 
 const covidData: CovidSection[] = [
   {
+    id: crypto.randomUUID(),
     title: "衛生面に関して",
     covidMeasuresList: [
       "マスクを着用しての接客",
@@ -22,6 +24,7 @@ const covidData: CovidSection[] = [
     ],
   },
   {
+    id: crypto.randomUUID(),
     title: "お客様へのご協力のお願い",
     covidMeasuresList: [
       "店内では、飲食時以外のマスク着用をお願いいたします",
@@ -32,6 +35,7 @@ const covidData: CovidSection[] = [
     ],
   },
   {
+    id: crypto.randomUUID(),
     title: "サービスに関して",
     covidMeasuresList: [
       "直接お渡しする商品の提供、金銭授受時にグローブの着用",
@@ -48,9 +52,10 @@ const covidData: CovidSection[] = [
 
     <>
         <h1>新型コロナウイルスに対する取り組みの最新情報をご案内</h1>
-        {covidData.map((section, index) => (
+        {covidData.map((section) => (
         <CovidDetail
-            key={index}
+            key={section.id}              //Reactの最適化用
+            id={section.id}               //propsで受け取る用
             title={section.title}
             covidMeasuresList={section.covidMeasuresList}
         />
