@@ -11,7 +11,7 @@ export default function CovidDetail({id,title,covidMeasuresList}:props){
     <>
       <h2>◾️{title}</h2>
       {covidMeasuresList.map((covidMeasure)=>{
-        return <p key={id}>・{covidMeasure}</p>
+        return <li key={id}>・{covidMeasure}</li>
         })
       }
     </>
