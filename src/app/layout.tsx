@@ -33,9 +33,9 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable}`}
       >
         {/* ヘッダー */}
-        <header className="gray">
+        <header className="">
           <div>
-            <p>example here is header</p>
+            <p>here is header</p>
 
           </div>
         </header>
