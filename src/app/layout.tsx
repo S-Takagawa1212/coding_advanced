@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Footer from "../../components/Footer/Footer";
+import Header from "../../components/Header/Header";
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../../styles/base.css";
 import "../../styles/style.css";
@@ -32,24 +34,12 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable}`}
       >
-        {/* ヘッダー */}
-        <header className="">
-          <div>
-            <p>here is header</p>
-
-          </div>
-        </header>
-
-        {/* メインコンテンツ */}
+        <Header/>
         <main className="">
           <p>here is main</p>
           {children}
         </main>
-
-        {/* フッター */}
-        <footer className="">
-          <p>here is footer</p>
-        </footer>
+        <Footer/>
       </body>
     </html>
   );
