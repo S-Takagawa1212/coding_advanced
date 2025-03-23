@@ -1,6 +1,6 @@
 "use client"
 
-import Covid from "./Covid";
+import Covid from "./Covid/Covid";
 import FoodItem from "./FoodItem";
 import Hero from "./Hero";
 import StoreInfo from "./StoreInfo";
