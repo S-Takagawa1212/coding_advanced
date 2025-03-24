@@ -51,15 +51,18 @@ const covidData: CovidSection[] = [
     return (
 
     <>
-        <h1>新型コロナウイルスに対する取り組みの最新情報をご案内</h1>
+    {/* TODO スタイルを当てる　共通部分は./stylesに定義　bootstrapを使う */}
+      <div>
+        <h2>新型コロナウイルスに対する取り組みの最新情報をご案内</h2>
         {covidData.map((section) => (
-        <CovidDetail
+          <CovidDetail
             key={section.id}              //Reactの最適化用
             id={section.id}               //propsで受け取る用
             title={section.title}
             covidMeasuresList={section.covidMeasuresList}
-        />
+          />
         ))}
+      </div>
     </>
     );
 
