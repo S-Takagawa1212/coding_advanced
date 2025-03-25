@@ -38,7 +38,7 @@ export default function FoodItem() {
     <>
       {Menus.map((menu) => (
         <div key={menu.id} className="container">
-          <h3>{menu.title}</h3>
+          <h3 className="mt-5 mb-3">{menu.title}</h3>
           <div className="row">
             <div className="col-md-6">
               <div className="ratio ratio-4x3">
@@ -52,7 +52,7 @@ export default function FoodItem() {
               </div>
             </div>
             <div className="col-md-6">
-              <p>{menu.explanation}</p>
+              <p className="p-3">{menu.explanation}</p>
             </div>
           </div>
         </div>
