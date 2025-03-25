@@ -16,7 +16,7 @@ export default function FoodItem() {
       title: "Signature Food",
       imageURL: "/images/food.jpg",
       explanation:
-        "サーモンは刺身やカルパッチョで長べるのが実味しいですが、リッチな気分になれるサーモンステーキがおすすめです。サーモンの美味しさを引き立てる2種のソースも絶品です！",
+        "サーモンは刺身やカルパッチョで食べるのが実味しいですが、リッチな気分になれるサーモンステーキがおすすめです。サーモンの美味しさを引き立てる2種のソースも絶品です！",
     },
     {
       id: crypto.randomUUID(),
@@ -42,13 +42,7 @@ export default function FoodItem() {
           <div className="row">
             <div className="col-md-6">
               <div className="ratio ratio-4x3">
-                <Image
-                  src={menu.imageURL}
-                  alt=""
-                  width={200}
-                  height={200}
-                  className="col-md-6"
-                />
+                <Image src={menu.imageURL} alt="" fill className="col-md-6" />
               </div>
             </div>
             <div className="col-md-6">
