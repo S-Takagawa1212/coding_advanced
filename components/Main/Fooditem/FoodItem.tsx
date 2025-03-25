@@ -42,13 +42,7 @@ export default function FoodItem() {
           <div className="row">
             <div className="col-md-6">
               <div className="ratio ratio-4x3">
-                <Image
-                  src={menu.imageURL}
-                  alt=""
-                  width={200}
-                  height={200}
-                  className="col-md-6"
-                />
+                <Image src={menu.imageURL} alt="" fill className="col-md-6" />
               </div>
             </div>
             <div className="col-md-6">
