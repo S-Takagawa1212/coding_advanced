@@ -1,20 +1,19 @@
-"use client"
+"use client";
 
 import Covid from "./Covid/Covid";
-import FoodItem from "./FoodItem";
-import Hero from "./Hero";
-import StoreInfo from "./StoreInfo";
-import StoreList from "./StoreList";
+import FoodItem from "./Fooditem/FoodItem";
+import Hero from "./Hero/Hero";
+import StoreInfo from "./StoreInfo/StoreInfo";
+import StoreList from "./StoreList/StoreList";
 
 export default function Main() {
-    return (
-        <>
-            <Hero/>
-            <Covid/>
-            <FoodItem/>
-            <StoreInfo/>
-            <StoreList/>
-        </>
-    );
-
+  return (
+    <>
+      <Hero />
+      <Covid />
+      <FoodItem />
+      <StoreInfo />
+      <StoreList />
+    </>
+  );
 }
