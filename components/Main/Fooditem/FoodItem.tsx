@@ -40,7 +40,7 @@ export default function FoodItem() {
         <div key={menu.id} className="container">
           <h3>{menu.title}</h3>
           <div className="row">
-            <div className="col-6">
+            <div className="col-md-6">
               <div className="ratio ratio-4x3">
                 <Image
                   src={menu.imageURL}
@@ -51,7 +51,7 @@ export default function FoodItem() {
                 />
               </div>
             </div>
-            <div className="col-6">
+            <div className="col-md-6">
               <p>{menu.explanation}</p>
             </div>
           </div>
