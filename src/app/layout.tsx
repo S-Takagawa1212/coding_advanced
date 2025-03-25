@@ -31,12 +31,14 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <Header />
-        <main className="">
-          <p>here is main</p>
-          {children}
-        </main>
-        <Footer />
+        <div className="">
+          <Header />
+          <main className="">
+            <p>here is main</p>
+            {children}
+          </main>
+          <Footer />
+        </div>
       </body>
     </html>
   );
