@@ -1,13 +1,12 @@
-import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+
 import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
-import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+import type { Metadata } from "next";
 import "../../styles/base.css";
 import "../../styles/style.css";
-// 最終的に不要
-// import "./globals.css";
-
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,15 +30,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable}`}
-      >
-        <Header/>
+      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <Header />
         <main className="">
           <p>here is main</p>
           {children}
         </main>
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );
