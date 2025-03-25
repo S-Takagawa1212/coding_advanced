@@ -16,7 +16,7 @@ export default function FoodItem() {
       title: "Signature Food",
       imageURL: "/images/food.jpg",
       explanation:
-        "サーモンは刺身やカルパッチョで長べるのが実味しいですが、リッチな気分になれるサーモンステーキがおすすめです。サーモンの美味しさを引き立てる2種のソースも絶品です！",
+        "サーモンは刺身やカルパッチョで食べるのが実味しいですが、リッチな気分になれるサーモンステーキがおすすめです。サーモンの美味しさを引き立てる2種のソースも絶品です！",
     },
     {
       id: crypto.randomUUID(),
