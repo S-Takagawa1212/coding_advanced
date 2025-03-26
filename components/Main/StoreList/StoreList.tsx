@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import StoreItem from "./StoreItem";
 
 export default function StoreList() {
   type StoreList = {
@@ -40,25 +40,12 @@ export default function StoreList() {
         </div>
         <div className="d-flex">
           {Stores.map((store) => (
-            <div
+            <StoreItem
               key={store.id}
-              className="ratio ratio-1x1 m-3 position-relative"
-            >
-              <div className="w-100 h-100">
-                <Image
-                  src={store.imageURL}
-                  alt=""
-                  fill
-                  className="rounded-circle"
-                />
-              </div>
-              <div>
-                <p className="">
-                  <i className="bi bi-geo-alt-fill"></i>
-                  {store.address}
-                </p>
-              </div>
-            </div>
+              id={store.id}
+              imageURL={store.imageURL}
+              address={store.address}
+            />
           ))}
         </div>
       </div>
