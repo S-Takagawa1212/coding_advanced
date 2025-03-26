@@ -12,7 +12,7 @@ export default function StoreList() {
   const Stores: StoreList[] = [
     {
       id: crypto.randomUUID(),
-      imageURL: "/images/restaurant.jpg",
+      imageURL: "/images/restaurant2.jpg",
       address: "東京都渋谷区 xxxxx xxxxx",
     },
     {
