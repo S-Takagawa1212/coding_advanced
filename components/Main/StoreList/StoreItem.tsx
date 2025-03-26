@@ -10,11 +10,11 @@ export default function StoreItem({ id, imageURL, address }: props) {
   return (
     <>
       <div key={id} className="ratio ratio-1x1 m-3 position-relative">
-        <div className="w-100 h-100">
+        <div className="">
           <Image src={imageURL} alt="" fill className="rounded-circle" />
         </div>
         <div>
-          <p className="">
+          <p className="position-absolute top-100 w-100 text-center">
             <i className="bi bi-geo-alt-fill"></i>
             {address}
           </p>

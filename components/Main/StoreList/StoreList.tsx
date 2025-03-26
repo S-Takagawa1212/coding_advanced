@@ -34,7 +34,7 @@ export default function StoreList() {
 
   return (
     <>
-      <div className="container pt-3">
+      <div className="container pt-3 pb-5">
         <div className="">
           <h4 className="text-center">店舗一覧</h4>
         </div>
