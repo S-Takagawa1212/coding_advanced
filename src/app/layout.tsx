@@ -7,6 +7,7 @@ import type { Metadata } from "next";
 import "../../styles/base.css";
 import "../../styles/style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap-icons/font/bootstrap-icons.min.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
