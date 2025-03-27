@@ -108,7 +108,7 @@ export default function Hero() {
           </div>
         </div>
         <button
-          className="carousel-control-prev d-none d-md"
+          className="carousel-control-prev"
           type="button"
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide="prev"
@@ -135,14 +135,12 @@ export default function Hero() {
           .carousel-indicators .active {
             background-color: #007bff !important;
           }
-          .carousel-control-prev {
-            filter: brightness(0) saturate(100 object-fit-cover%) invert(30%)
-              sepia(90%) saturate(1000%) hue-rotate(190deg);
-          }
+          .carousel-control-prev,
           .carousel-control-next {
-            filter: brightness(0) saturate(100 object-fit-cover%) invert(30%)
-              sepia(90%) saturate(1000%) hue-rotate(190deg);
+            filter: brightness(0) saturate(100%) invert(30%) sepia(90%)
+              saturate(1000%) hue-rotate(190deg);
           }
+
           #carouselExampleIndicators {
             height: 500px;
           }
