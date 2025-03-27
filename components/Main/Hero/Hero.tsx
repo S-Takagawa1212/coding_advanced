@@ -161,7 +161,12 @@ export default function Hero() {
           img {
             height: 100%;
             width: 100%;
-            padiing: 5% 10% 0% 10%;
+          }
+          // bootstrapのmdは768px
+          @media (max-width: 767px) {
+            img {
+              padding: 5% 10%;
+            }
           }
         `}</style>
         ;
