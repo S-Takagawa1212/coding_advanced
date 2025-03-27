@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 
 import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
+import BootstrapClient from "../../components/BootstrapClient";
 
 import type { Metadata } from "next";
 
@@ -9,7 +10,6 @@ import "../../styles/base.css";
 import "../../styles/style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.min.css";
-import BootstrapClient from "../../components/BootstrapClient";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
