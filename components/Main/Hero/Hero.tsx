@@ -139,6 +139,15 @@ export default function Hero() {
           .carousel-control-next {
             filter: brightness(0) saturate(100%) invert(30%) sepia(90%)
               saturate(1000%) hue-rotate(190deg);
+            width: 3rem;
+            height: 100%;
+          }
+
+          .carousel-control-prev-icon,
+          .carousel-control-next-icon {
+            width: 4rem;
+            height: 4rem;
+            background-size: 100% 100%;
           }
 
           #carouselExampleIndicators {
