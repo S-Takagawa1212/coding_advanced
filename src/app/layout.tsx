@@ -37,10 +37,7 @@ export default function RootLayout({
         <BootstrapClient />
         <div className="">
           <Header />
-          <main className="">
-            <p>here is main</p>
-            {children}
-          </main>
+          <main className="">{children}</main>
           <Footer />
         </div>
       </body>
