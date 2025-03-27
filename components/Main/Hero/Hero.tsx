@@ -7,7 +7,7 @@ export default function Hero() {
     <>
       <div
         id="carouselExampleIndicators"
-        className="carousel-fade slide"
+        className="carousel-fade slide "
         data-bs-ride="carousel"
       >
         <div className="carousel-indicators">
@@ -33,16 +33,54 @@ export default function Hero() {
             data-bs-slide-to="2"
             aria-label="Slide 3"
           ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            className={`${styles.carouselButtonDesign}`}
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
         </div>
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img className="d-block w-100" src="/images/food.jpg" />
+            <div className="row">
+              <div className="col-12 col-md-6 p-0">
+                <img className="d-block w-100" src="/images/food.jpg" />
+              </div>
+              <div className="col-12 d-none d-md-flex col-md-6 p-0">
+                <img className="d-block w-100" src="/images/food2.jpg" />
+              </div>
+            </div>
           </div>
           <div className="carousel-item">
-            <img className="d-block w-100" src="/images/food2.jpg" />
+            <div className="row">
+              <div className="col-12 col-md-6 p-0">
+                <img className="d-block w-100" src="/images/food3.jpg" />
+              </div>
+              <div className="col-12 d-none d-md-flex d-md col-md-6 p-0">
+                <img className="d-block w-100" src="/images/food4.jpg" />
+              </div>
+            </div>
           </div>
           <div className="carousel-item">
-            <img className="d-block w-100" src="/images/food3.jpg" />
+            <div className="row">
+              <div className="col-12 col-md-6 p-0">
+                <img className="d-block w-100" src="/images/restaurant.jpg" />
+              </div>
+              <div className="col-12 d-none d-md-flex col-md-6 p-0">
+                <img className="d-block w-100" src="/images/restaurant2.jpg" />
+              </div>
+            </div>
+          </div>
+          <div className="carousel-item">
+            <div className="row">
+              <div className="col-12 col-md-6 p-0">
+                <img className="d-block w-100" src="/images/interior.jpg" />
+              </div>
+              <div className="col-12 d-none d-md-flex col-md-6 p-0">
+                <img className="d-block w-100" src="/images/restaurant3.jpg" />
+              </div>
+            </div>
           </div>
         </div>
         <button
@@ -58,7 +96,7 @@ export default function Hero() {
           <span className="visually-hidden">Previous</span>
         </button>
         <button
-          className="carousel-control-next "
+          className="carousel-control-next"
           type="button"
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide="next"
