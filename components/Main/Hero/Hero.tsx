@@ -46,7 +46,7 @@ export default function Hero() {
           </div>
         </div>
         <button
-          className="carousel-control-prev"
+          className="carousel-control-prev d-none d-md"
           type="button"
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide="prev"
@@ -58,7 +58,7 @@ export default function Hero() {
           <span className="visually-hidden">Previous</span>
         </button>
         <button
-          className="carousel-control-next"
+          className="carousel-control-next "
           type="button"
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide="next"
@@ -72,6 +72,14 @@ export default function Hero() {
         <style jsx>{`
           .carousel-indicators .active {
             background-color: #007bff !important;
+          }
+          .carousel-control-prev {
+            filter: brightness(0) saturate(100%) invert(30%) sepia(90%)
+              saturate(1000%) hue-rotate(190deg);
+          }
+          .carousel-control-next {
+            filter: brightness(0) saturate(100%) invert(30%) sepia(90%)
+              saturate(1000%) hue-rotate(190deg);
           }
         `}</style>
         ;
