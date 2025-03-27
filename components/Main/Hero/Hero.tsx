@@ -69,6 +69,12 @@ export default function Hero() {
           ></span>
           <span className="visually-hidden">Next</span>
         </button>
+        <style jsx>{`
+          .carousel-indicators .active {
+            background-color: #007bff !important;
+          }
+        `}</style>
+        ;
       </div>
     </>
   );
