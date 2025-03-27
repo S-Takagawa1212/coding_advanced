@@ -7,7 +7,7 @@ export default function Hero() {
     <>
       <div
         id="carouselExampleIndicators"
-        className="carousel-fade slide "
+        className="carousel-fade slide  position-relative"
         data-bs-ride="carousel"
       >
         <div className="carousel-indicators">
@@ -41,44 +41,68 @@ export default function Hero() {
             aria-label="Slide 4"
           ></button>
         </div>
-        <div className="carousel-inner">
+        <div className="carousel-inner ">
           <div className="carousel-item active">
             <div className="row">
               <div className="col-12 col-md-6 p-0">
-                <img className="d-block w-100" src="/images/food.jpg" />
+                <img
+                  className="d-block w-100 object-fit-cover"
+                  src="/images/food.jpg"
+                />
               </div>
               <div className="col-12 d-none d-md-flex col-md-6 p-0">
-                <img className="d-block w-100" src="/images/food2.jpg" />
+                <img
+                  className="d-block w-100 object-fit-cover"
+                  src="/images/food2.jpg"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="carousel-item">
+            <div className="row">
+              <div className="col-12 col-md-6 p-0 h-100">
+                <img
+                  className="d-block w-100 object-fit-cover"
+                  src="/images/food3.jpg"
+                />
+              </div>
+              <div className="col-12 d-none d-md-flex col-md-6 p-0">
+                <img
+                  className="d-block w-100 object-fit-cover"
+                  src="/images/food4.jpg"
+                />
               </div>
             </div>
           </div>
           <div className="carousel-item">
             <div className="row">
               <div className="col-12 col-md-6 p-0">
-                <img className="d-block w-100" src="/images/food3.jpg" />
+                <img
+                  className="d-block w-100 object-fit-cover"
+                  src="/images/restaurant.jpg"
+                />
               </div>
-              <div className="col-12 d-none d-md-flex d-md col-md-6 p-0">
-                <img className="d-block w-100" src="/images/food4.jpg" />
+              <div className="col-12 d-none d-md-flex col-md-6 p-0">
+                <img
+                  className="d-block w-100 object-fit-cover"
+                  src="/images/restaurant2.jpg"
+                />
               </div>
             </div>
           </div>
           <div className="carousel-item">
             <div className="row">
               <div className="col-12 col-md-6 p-0">
-                <img className="d-block w-100" src="/images/restaurant.jpg" />
+                <img
+                  className="d-block w-100 object-fit-cover"
+                  src="/images/interior.jpg"
+                />
               </div>
               <div className="col-12 d-none d-md-flex col-md-6 p-0">
-                <img className="d-block w-100" src="/images/restaurant2.jpg" />
-              </div>
-            </div>
-          </div>
-          <div className="carousel-item">
-            <div className="row">
-              <div className="col-12 col-md-6 p-0">
-                <img className="d-block w-100" src="/images/interior.jpg" />
-              </div>
-              <div className="col-12 d-none d-md-flex col-md-6 p-0">
-                <img className="d-block w-100" src="/images/restaurant3.jpg" />
+                <img
+                  className="d-block w-100 object-fit-cover"
+                  src="/images/restaurant3.jpg"
+                />
               </div>
             </div>
           </div>
@@ -112,12 +136,25 @@ export default function Hero() {
             background-color: #007bff !important;
           }
           .carousel-control-prev {
-            filter: brightness(0) saturate(100%) invert(30%) sepia(90%)
-              saturate(1000%) hue-rotate(190deg);
+            filter: brightness(0) saturate(100 object-fit-cover%) invert(30%)
+              sepia(90%) saturate(1000%) hue-rotate(190deg);
           }
           .carousel-control-next {
-            filter: brightness(0) saturate(100%) invert(30%) sepia(90%)
-              saturate(1000%) hue-rotate(190deg);
+            filter: brightness(0) saturate(100 object-fit-cover%) invert(30%)
+              sepia(90%) saturate(1000%) hue-rotate(190deg);
+          }
+          #carouselExampleIndicators {
+            height: 500px;
+          }
+          .carousel-inner,
+          .carousel-item,
+          .row {
+            height: 100%;
+          }
+          img {
+            height: 100%;
+            width: 100%;
+            padiing: 5% 10% 0% 10%;
           }
         `}</style>
         ;
