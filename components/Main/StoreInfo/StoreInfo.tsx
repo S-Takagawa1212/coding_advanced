@@ -12,7 +12,7 @@ export default function StoreInfo() {
           <h4 className="ps-2">Mondays - Friday: 10am - 9pm</h4>
           <p>Saturdays, Sundays & Public Holidays: 9am- 9pm</p>
         </div>
-        <div className="col-md-6 p-0 p-mb-2">
+        <div className="col-md-6 p-0">
           <div className="ratio ratio-4x3">
             <Image
               src="/images/barista.jpg"
