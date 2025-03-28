@@ -1,0 +1,10 @@
+/* bootstrapの詳細度に勝てないので!importantで処理　コンポーネント内で完結するので問題なし */
+
+.carouselButtonDesign {
+  width: 12px !important;
+  height: 12px !important;
+  border-radius: 50% !important;
+  background-color: #ccc !important;
+  border: none !important;
+  margin: 0 6px !important;
+}

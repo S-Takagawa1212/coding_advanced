@@ -2,8 +2,10 @@ import { Geist, Geist_Mono } from "next/font/google";
 
 import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
+import BootstrapClient from "../../components/BootstrapClient";
 
 import type { Metadata } from "next";
+
 import "../../styles/base.css";
 import "../../styles/style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -32,12 +34,10 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <BootstrapClient />
         <div className="">
           <Header />
-          <main className="">
-            <p>here is main</p>
-            {children}
-          </main>
+          <main className="">{children}</main>
           <Footer />
         </div>
       </body>
