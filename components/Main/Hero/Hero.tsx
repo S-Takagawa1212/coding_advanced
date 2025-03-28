@@ -2,6 +2,12 @@
 
 import styles from "./Hero.module.css";
 
+// FIXME
+// bootstrapとNextの<Image>タグのfilの相性が悪いため<image>を使用
+// bootstrap.carouselとnextのSSRの相性も悪い模様
+// 現在、インジケータと<>ボタンを明示的に初期化する処理をBootstrapClient.tsxに記述しているので、責務分離の観点からここに移植すべきです。
+// そもそもbootstrapのcarousel以外のライブラリで実装すべきかもしれない
+
 export default function Hero() {
   return (
     <>
