@@ -1,8 +1,5 @@
 "use client";
 
-import Menu from "./Menu";
-import Searchbar from "./SearchBar";
-
 export default function Header() {
   return (
     <>
@@ -13,7 +10,7 @@ export default function Header() {
               Casteria
             </a>
             <button
-              className="navbar-toggler"
+              className="navbar-toggler "
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent"
@@ -66,8 +63,6 @@ export default function Header() {
             </div>
           </div>
         </nav>
-        <Menu />
-        <Searchbar />
       </header>
     </>
   );
