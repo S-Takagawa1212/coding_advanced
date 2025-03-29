@@ -7,7 +7,7 @@ export default function Header() {
     <>
       <header className="">
         <nav className="navbar navbar-expand-lg pt-0 pb-0">
-          <div className="container-fluid p-0 ps-md-2 pe-md-2">
+          <div className="container-fluid p-0 ps-md-3 pe-md-3">
             <a className="navbar-brand fs-1 fw-bold" href="#">
               Casteria
             </a>
