@@ -5,12 +5,12 @@ export default function Header() {
     <>
       <header className="">
         <nav className="navbar navbar-expand-lg pt-0">
-          <div className="container-fluid p-0 ps-md-2">
+          <div className="container-fluid p-0 ps-md-2 pe-md-2">
             <a className="navbar-brand fs-1 fw-bold" href="#">
               Casteria
             </a>
             <button
-              className="navbar-toggler "
+              className="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent"
