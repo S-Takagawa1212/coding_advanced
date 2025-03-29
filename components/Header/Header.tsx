@@ -1,5 +1,7 @@
 "use client";
 
+import styles from "./Header.module.css";
+
 export default function Header() {
   return (
     <>
@@ -10,7 +12,7 @@ export default function Header() {
               Casteria
             </a>
             <button
-              className="navbar-toggler"
+              className={`navbar-toggler ${styles.buttonHover}`}
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent"
