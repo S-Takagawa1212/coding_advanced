@@ -17,15 +17,16 @@ export default function CovidDetail({ id, title, covidMeasuresList }: props) {
       <h3 className={styles.h3} onClick={() => setIsOpen((prev) => !prev)}>
         ◾️{title}
       </h3>
-      {/* 受け取った各項目の説明文をliとして展開する */}
-      {isOpen &&
-        covidMeasuresList.map((covidMeasure, index) => {
+      <ul className={`${styles.covidList} ${isOpen ? styles.open : styles.closed}`}>
+        {/* 受け取った各項目の説明文をliとして展開する */}
+        {covidMeasuresList.map((covidMeasure, index) => {
           return (
             <li key={`${id}` + `${index}`} className="mb-2">
               ・{covidMeasure}
             </li>
           );
         })}
+      </ul>
     </>
   );
 }
