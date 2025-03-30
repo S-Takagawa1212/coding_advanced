@@ -1,7 +1,7 @@
 .h3 {
   background-color: #ffc7af;
   padding: 10px 0 10px 5px;
-  /* cursor:pointer */
+  cursor: pointer;
 }
 
 .covidList {
