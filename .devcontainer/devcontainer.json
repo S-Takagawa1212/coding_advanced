@@ -15,7 +15,8 @@
 				"esbenp.prettier-vscode", // Prettier (コードフォーマッター)
 				"bradlc.vscode-tailwindcss", // Tailwind CSS IntelliSense
 				"xabikos.javascriptsnippets", // JavaScriptスニペット集
-				"dsznajder.es7-react-js-snippets" // React/Next.js向けのスニペット
+				"dsznajder.es7-react-js-snippets", // React/Next.js向けのスニペット
+				"fabiospampinato.vscode-highlight"  //   to-doなどのハイライト表示
 			],
 			"settings": {
 				"editor.formatOnSave": true, // 保存時に自動フォーマット
