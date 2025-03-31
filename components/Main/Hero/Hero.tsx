@@ -13,7 +13,7 @@ export default function Hero() {
     <>
       <div
         id="carouselExampleIndicators"
-        className="carousel-fade slide  position-relative"
+        className={`carousel-fade slide  position-relative ${styles.carouselExampleIndicators}`}
         data-bs-ride="carousel"
       >
         <div className="carousel-indicators">
@@ -47,66 +47,66 @@ export default function Hero() {
             aria-label="Slide 4"
           ></button>
         </div>
-        <div className="carousel-inner ">
-          <div className="carousel-item active">
-            <div className="row">
+        <div className={`carousel-inner ${styles.customH100}`}>
+          <div className={`carousel-item ${styles.customH100} active`}>
+            <div className={`row ${styles.customH100}`}>
               <div className="col-12 col-md-6 p-0">
                 <img
-                  className="d-block w-100 object-fit-cover"
+                  className={`d-block w-100 object-fit-cover ${styles.imageStyle}`}
                   src="/images/food.jpg"
                 />
               </div>
               <div className="col-12 d-none d-md-flex col-md-6 p-0">
                 <img
-                  className="d-block w-100 object-fit-cover"
+                  className={`d-block w-100 object-fit-cover ${styles.imageStyle}`}
                   src="/images/food2.jpg"
                 />
               </div>
             </div>
           </div>
-          <div className="carousel-item">
-            <div className="row">
+          <div className={`carousel-item ${styles.customH100}`}>
+            <div className={`row ${styles.customH100}`}>
               <div className="col-12 col-md-6 p-0 h-100">
                 <img
-                  className="d-block w-100 object-fit-cover"
+                  className={`d-block w-100 object-fit-cover ${styles.imageStyle}`}
                   src="/images/food3.jpg"
                 />
               </div>
               <div className="col-12 d-none d-md-flex col-md-6 p-0">
                 <img
-                  className="d-block w-100 object-fit-cover"
+                  className={`d-block w-100 object-fit-cover ${styles.imageStyle}`}
                   src="/images/food4.jpg"
                 />
               </div>
             </div>
           </div>
-          <div className="carousel-item">
-            <div className="row">
+          <div className={`carousel-item ${styles.customH100}`}>
+            <div className={`row ${styles.customH100}`}>
               <div className="col-12 col-md-6 p-0">
                 <img
-                  className="d-block w-100 object-fit-cover"
+                  className={`d-block w-100 object-fit-cover ${styles.imageStyle}`}
                   src="/images/restaurant.jpg"
                 />
               </div>
               <div className="col-12 d-none d-md-flex col-md-6 p-0">
                 <img
-                  className="d-block w-100 object-fit-cover"
+                  className={`d-block w-100 object-fit-cover ${styles.imageStyle}`}
                   src="/images/restaurant2.jpg"
                 />
               </div>
             </div>
           </div>
-          <div className="carousel-item">
-            <div className="row">
+          <div className={`carousel-item ${styles.customH100}`}>
+            <div className={`row ${styles.customH100}`}>
               <div className="col-12 col-md-6 p-0">
                 <img
-                  className="d-block w-100 object-fit-cover"
+                  className={`d-block w-100 object-fit-cover ${styles.imageStyle}`}
                   src="/images/interior.jpg"
                 />
               </div>
               <div className="col-12 d-none d-md-flex col-md-6 p-0">
                 <img
-                  className="d-block w-100 object-fit-cover"
+                  className={`d-block w-100 object-fit-cover ${styles.imageStyle}`}
                   src="/images/restaurant3.jpg"
                 />
               </div>
@@ -114,67 +114,39 @@ export default function Hero() {
           </div>
         </div>
         <button
-          className="carousel-control-prev"
+          className={`carousel-control-prev ${styles.customCarouselControlColor}`}
           type="button"
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide="prev"
         >
           <span
-            className="carousel-control-prev-icon"
+            className={`carousel-control-prev-icon ${styles.carouselControlIconFont}`}
             aria-hidden="true"
           ></span>
           <span className="visually-hidden">Previous</span>
         </button>
         <button
-          className="carousel-control-next"
+          className={`carousel-control-next ${styles.customCarouselControlColor}`}
           type="button"
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide="next"
         >
           <span
-            className="carousel-control-next-icon"
+            className={`carousel-control-next-icon ${styles.carouselControlIconFont}`}
             aria-hidden="true"
           ></span>
           <span className="visually-hidden">Next</span>
         </button>
-        <style jsx>{`
-          .carousel-indicators .active {
-            background-color: #007bff !important;
-          }
-          .carousel-control-prev,
-          .carousel-control-next {
-            filter: brightness(0) saturate(100%) invert(30%) sepia(90%)
-              saturate(1000%) hue-rotate(190deg);
-            width: 3rem;
-            height: 100%;
-          }
-
-          .carousel-control-prev-icon,
-          .carousel-control-next-icon {
-            width: 4rem;
-            height: 4rem;
-            background-size: 100% 100%;
-          }
-
-          #carouselExampleIndicators {
-            height: 500px;
-          }
-          .carousel-inner,
-          .carousel-item,
-          .row {
-            height: 100%;
-          }
-          img {
-            height: 100%;
-            width: 100%;
-          }
-          // bootstrapのmdは768px
-          @media (max-width: 767px) {
-            img {
-              padding: 5% 10%;
+        {/* bootstrapのcarouselによる動的なactive要素の追加は、jsxのclassName={``}記法の中には書けない。自前でisStateによる状態管理を実装し、三項演算子で分岐判断する必要がある。それではbootstrapを使う意味が薄いため、active
+          に関する処理のみ<style>でスタイルをあてる。 */}
+        {/* TODO　スタイルをmodule.cssに切り出す*/}
+        <style jsx>
+          {`
+            .carousel-indicators .active {
+              background-color: #007bff !important;
             }
-          }
-        `}</style>
+          `}
+        </style>
         ;
       </div>
     </>
