@@ -21,3 +21,8 @@
   height: 4rem;
   background-size: 100% 100%;
 }
+
+/* 画像のサイズ次第でhero以下のコンポーネントの表示位置が上下してしまう自走の対策 */
+.carouselExampleIndicators {
+  height: 500px;
+}

@@ -13,7 +13,7 @@ export default function Hero() {
     <>
       <div
         id="carouselExampleIndicators"
-        className="carousel-fade slide  position-relative"
+        className={`carousel-fade slide  position-relative ${styles.carouselExampleIndicators}`}
         data-bs-ride="carousel"
       >
         <div className="carousel-indicators">
@@ -146,9 +146,6 @@ export default function Hero() {
               background-color: #007bff !important;
             }
 
-            #carouselExampleIndicators {
-              height: 500px;
-            }
             .carousel-inner,
             .carousel-item,
             .row {
