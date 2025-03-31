@@ -8,3 +8,10 @@
   border: none !important;
   margin: 0 6px !important;
 }
+
+.customCarouselControlColor {
+  filter: brightness(0) saturate(100%) invert(30%) sepia(90%) saturate(1000%)
+    hue-rotate(190deg);
+  width: 3rem;
+  height: 100%;
+}
