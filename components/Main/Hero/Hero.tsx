@@ -120,7 +120,7 @@ export default function Hero() {
           data-bs-slide="prev"
         >
           <span
-            className="carousel-control-prev-icon"
+            className={`carousel-control-prev-icon ${styles.carouselControlIconFont}`}
             aria-hidden="true"
           ></span>
           <span className="visually-hidden">Previous</span>
@@ -132,7 +132,7 @@ export default function Hero() {
           data-bs-slide="next"
         >
           <span
-            className="carousel-control-next-icon"
+            className={`carousel-control-next-icon ${styles.carouselControlIconFont}`}
             aria-hidden="true"
           ></span>
           <span className="visually-hidden">Next</span>
@@ -144,13 +144,6 @@ export default function Hero() {
           {`
             .carousel-indicators .active {
               background-color: #007bff !important;
-            }
-
-            .carousel-control-prev-icon,
-            .carousel-control-next-icon {
-              width: 4rem;
-              height: 4rem;
-              background-size: 100% 100%;
             }
 
             #carouselExampleIndicators {
