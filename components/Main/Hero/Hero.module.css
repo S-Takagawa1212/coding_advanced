@@ -30,3 +30,14 @@
 .customH100 {
   height: 100%;
 }
+
+.imageStyle {
+  height: 100%;
+  width: 100%;
+}
+/* bootstrapのmdは768px */
+@media (max-width: 767px) {
+  .imageStyle {
+    padding: 5% 10%;
+  }
+}

@@ -52,13 +52,13 @@ export default function Hero() {
             <div className={`row ${styles.customH100}`}>
               <div className="col-12 col-md-6 p-0">
                 <img
-                  className="d-block w-100 object-fit-cover"
+                  className={`d-block w-100 object-fit-cover ${styles.imageStyle}`}
                   src="/images/food.jpg"
                 />
               </div>
               <div className="col-12 d-none d-md-flex col-md-6 p-0">
                 <img
-                  className="d-block w-100 object-fit-cover"
+                  className={`d-block w-100 object-fit-cover ${styles.imageStyle}`}
                   src="/images/food2.jpg"
                 />
               </div>
@@ -68,13 +68,13 @@ export default function Hero() {
             <div className={`row ${styles.customH100}`}>
               <div className="col-12 col-md-6 p-0 h-100">
                 <img
-                  className="d-block w-100 object-fit-cover"
+                  className={`d-block w-100 object-fit-cover ${styles.imageStyle}`}
                   src="/images/food3.jpg"
                 />
               </div>
               <div className="col-12 d-none d-md-flex col-md-6 p-0">
                 <img
-                  className="d-block w-100 object-fit-cover"
+                  className={`d-block w-100 object-fit-cover ${styles.imageStyle}`}
                   src="/images/food4.jpg"
                 />
               </div>
@@ -84,13 +84,13 @@ export default function Hero() {
             <div className={`row ${styles.customH100}`}>
               <div className="col-12 col-md-6 p-0">
                 <img
-                  className="d-block w-100 object-fit-cover"
+                  className={`d-block w-100 object-fit-cover ${styles.imageStyle}`}
                   src="/images/restaurant.jpg"
                 />
               </div>
               <div className="col-12 d-none d-md-flex col-md-6 p-0">
                 <img
-                  className="d-block w-100 object-fit-cover"
+                  className={`d-block w-100 object-fit-cover ${styles.imageStyle}`}
                   src="/images/restaurant2.jpg"
                 />
               </div>
@@ -100,13 +100,13 @@ export default function Hero() {
             <div className={`row ${styles.customH100}`}>
               <div className="col-12 col-md-6 p-0">
                 <img
-                  className="d-block w-100 object-fit-cover"
+                  className={`d-block w-100 object-fit-cover ${styles.imageStyle}`}
                   src="/images/interior.jpg"
                 />
               </div>
               <div className="col-12 d-none d-md-flex col-md-6 p-0">
                 <img
-                  className="d-block w-100 object-fit-cover"
+                  className={`d-block w-100 object-fit-cover ${styles.imageStyle}`}
                   src="/images/restaurant3.jpg"
                 />
               </div>
@@ -144,17 +144,6 @@ export default function Hero() {
           {`
             .carousel-indicators .active {
               background-color: #007bff !important;
-            }
-
-            img {
-              height: 100%;
-              width: 100%;
-            }
-            // bootstrapのmdは768px
-            @media (max-width: 767px) {
-              img {
-                padding: 5% 10%;
-              }
             }
           `}
         </style>
