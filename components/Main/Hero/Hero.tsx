@@ -47,9 +47,9 @@ export default function Hero() {
             aria-label="Slide 4"
           ></button>
         </div>
-        <div className="carousel-inner ">
-          <div className="carousel-item active">
-            <div className="row">
+        <div className={`carousel-inner ${styles.customH100}`}>
+          <div className={`carousel-item ${styles.customH100} active`}>
+            <div className={`row ${styles.customH100}`}>
               <div className="col-12 col-md-6 p-0">
                 <img
                   className="d-block w-100 object-fit-cover"
@@ -64,8 +64,8 @@ export default function Hero() {
               </div>
             </div>
           </div>
-          <div className="carousel-item">
-            <div className="row">
+          <div className={`carousel-item ${styles.customH100}`}>
+            <div className={`row ${styles.customH100}`}>
               <div className="col-12 col-md-6 p-0 h-100">
                 <img
                   className="d-block w-100 object-fit-cover"
@@ -80,8 +80,8 @@ export default function Hero() {
               </div>
             </div>
           </div>
-          <div className="carousel-item">
-            <div className="row">
+          <div className={`carousel-item ${styles.customH100}`}>
+            <div className={`row ${styles.customH100}`}>
               <div className="col-12 col-md-6 p-0">
                 <img
                   className="d-block w-100 object-fit-cover"
@@ -96,8 +96,8 @@ export default function Hero() {
               </div>
             </div>
           </div>
-          <div className="carousel-item">
-            <div className="row">
+          <div className={`carousel-item ${styles.customH100}`}>
+            <div className={`row ${styles.customH100}`}>
               <div className="col-12 col-md-6 p-0">
                 <img
                   className="d-block w-100 object-fit-cover"
@@ -146,11 +146,6 @@ export default function Hero() {
               background-color: #007bff !important;
             }
 
-            .carousel-inner,
-            .carousel-item,
-            .row {
-              height: 100%;
-            }
             img {
               height: 100%;
               width: 100%;
