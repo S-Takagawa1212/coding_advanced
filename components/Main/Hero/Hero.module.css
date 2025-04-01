@@ -1,0 +1,43 @@
+/* bootstrapの詳細度に勝てないので!importantで処理　コンポーネント内で完結するので問題なし */
+
+.carouselButtonDesign {
+  width: 12px !important;
+  height: 12px !important;
+  border-radius: 50% !important;
+  background-color: #ccc !important;
+  border: none !important;
+  margin: 0 6px !important;
+}
+
+.customCarouselControlColor {
+  filter: brightness(0) saturate(100%) invert(30%) sepia(90%) saturate(1000%)
+    hue-rotate(190deg);
+  width: 3rem;
+  height: 100%;
+}
+
+.carouselControlIconFont {
+  width: 4rem;
+  height: 4rem;
+  background-size: 100% 100%;
+}
+
+/* 画像のサイズ次第でhero以下のコンポーネントの表示位置が上下してしまう事象の対策 */
+.carouselExampleIndicators {
+  height: 500px;
+}
+
+.customH100 {
+  height: 100%;
+}
+
+.imageStyle {
+  height: 100%;
+  width: 100%;
+}
+/* bootstrapのmdは768px */
+@media (max-width: 767px) {
+  .imageStyle {
+    padding: 5% 10%;
+  }
+}

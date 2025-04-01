@@ -1,0 +1,19 @@
+.h3 {
+  background-color: #ffc7af;
+  padding: 10px 0 10px 5px;
+  cursor: pointer;
+}
+
+.covidList {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease !important;
+}
+
+.open {
+  max-height: 800px;
+}
+
+.closed {
+  max-height: 0;
+}

@@ -1,8 +1,15 @@
-import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import Link from "next/link";
-import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
-import "./globals.css";
+
+import Footer from "../../components/Footer/Footer";
+import Header from "../../components/Header/Header";
+import BootstrapClient from "../../components/BootstrapClient";
+
+import type { Metadata } from "next";
+
+import "../../styles/base.css";
+import "../../styles/style.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap-icons/font/bootstrap-icons.min.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,76 +33,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} bg-white text-gray-900 antialiased min-h-screen`}
-      >
-        {/* ヘッダー */}
-        <header className="bg-blue-600 text-white shadow-md">
-          <div className="container mx-auto flex justify-between items-center p-4">
-            <h1 className="text-2xl font-bold">
-              <Link href="/">単語クイズアプリ</Link>
-            </h1>
-            <nav>
-              <ul className="flex space-x-4">
-                <li>
-                  <Link
-                    href="/"
-                  className="px-4 py-2 rounded-lg font-semibold bg-blue-500 text-white shadow-md hover:bg-blue-700 transition duration-300"
-                  >
-                    ホーム
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/quiz"
-                  className="px-4 py-2 rounded-lg font-semibold bg-blue-500 text-white shadow-md hover:bg-blue-700 transition duration-300"
-                  >
-                    クイズ
-                  </Link>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </header>
-
-        {/* メインコンテンツ */}
-        <main className="container mx-auto p-6 min-h-screen bg-white shadow-md rounded-lg my-8">
-          {children}
-        </main>
-
-        {/* フッター */}
-        <footer className="bg-blue-600 text-white py-6 shadow-md">
-          <div className="container mx-auto text-center">
-            <p className="mb-2">&copy; 2025 単語クイズアプリ. All Rights Reserved.</p>
-            <div className="flex justify-center space-x-6">
-              <a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-gray-300 transition duration-300"
-              >
-                <FaTwitter size={24} />
-              </a>
-              <a
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-gray-300 transition duration-300"
-              >
-                <FaFacebook size={24} />
-              </a>
-              <a
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-gray-300 transition duration-300"
-              >
-                <FaInstagram size={24} />
-              </a>
-            </div>
-            <p className="mt-4 text-sm">&copy; 2025 単語クイズアプリ. All Rights Reserved.</p>
-          </div>
-        </footer>
+      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <BootstrapClient />
+        <div className="">
+          <Header />
+          <main className="">{children}</main>
+          <Footer />
+        </div>
       </body>
     </html>
   );

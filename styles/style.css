@@ -1,0 +1,15 @@
+body {
+  min-height: 100vh;
+}
+
+header {
+  background-color: lightgray;
+}
+main {
+  background-color: #ffefd5;
+  padding-bottom: 30px;
+}
+
+footer {
+  background-color: darkgray;
+}
